@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JavaScript</title>
+</head>
+<body>
+    <label>
+        What language was created to add interactivity to the Web? <input class="Lang" type="text"></input>
+        </label>
+
+    <script>
+        var langTxt = document.querySelector('.Lang'); 
+        langTxt.addEventListener('focusout', 
+            (event) => {
+                alert("You typed " + langTxt.value);
+            }
+        );
+
+        var codeChoice = prompt("What code library you would prefer: Vue, React or jQuery?");
+        alert("You chose " + codeChoice);
+
+
+    //    alert(document.querySelector('.Lang'));
+    //    var txt = document.querySelector('.Lang');
+    //    txt.addEventListener('focusout',
+    //    (event) => {alert(txt.value)}
+    //    );
+    </script>
+    
+</body>
+</html>
